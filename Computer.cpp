@@ -3,13 +3,13 @@
 #include "Rock.h"
 using namespace std;
 
-Computer::Computer(){ }
+Computer::Computer(){name = "Computer";}
 
 Move* Computer::makeMove() {
-    Move* move = new Rock();
+    move = new Rock();
     return move;  
 }
 
 string Computer::getName() {
-    return "Computer";
+    return name;
 }

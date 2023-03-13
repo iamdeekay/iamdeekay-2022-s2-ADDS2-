@@ -11,7 +11,7 @@
 #include "Monkey.h"
 #include <iostream>
 
-Human::Human(){}
+Human::Human(){name = "Human";}
 
 Human::Human(std::string newName){
     name = newName;
@@ -23,7 +23,6 @@ std::string Human::getName(){
 
 Move * Human::makeMove(){
     std::string newMove;
-    Move* move;
     std::cout << "Enter move: ";
     std::cin >> newMove;
 
